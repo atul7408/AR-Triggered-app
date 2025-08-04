@@ -1,12 +1,98 @@
-# React + Vite
+📖 Project Overview
+This project is a prototype for an AR-triggered campaign simulating how a print ad can "come to life" when scanned via QR code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The experience allows a user to:
 
-Currently, two official plugins are available:
+Scan a QR code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Launch an AR-like interactive experience (simulated with Three.js)
 
-## Expanding the ESLint configuration
+View a product with a Call-to-Action (Buy Now)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+See real-time campaign analytics such as total scans and average time spent
+
+This prototype aligns with AR Horizon’s vision of immersive, real-time customer engagement.
+
+🛠 Tech Stack
+🔹 Frontend
+React.js – SPA framework
+
+Tailwind CSS – Responsive modern UI
+
+Three.js – WebGL AR simulation (3D rotating cube)
+
+react-qr-code – QR code generation
+
+🔹 Backend
+Node.js + Express.js – REST API
+
+MongoDB Atlas – Cloud database
+
+Mongoose – ODM for MongoDB
+
+Swagger UI – API documentation
+
+🔹 Deployment
+Frontend: Netlify (static hosting)
+
+Backend: Render (Node/Express hosting)
+
+Database: MongoDB Atlas
+
+⚙️ Setup Instructions
+Clone Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ar-horizon-campaign.git
+cd ar-horizon-campaign
+🔹 Frontend Setup
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+Runs locally at → http://localhost:3000
+
+🔹 Backend Setup
+bash
+Copy
+Edit
+cd backend
+npm install
+npm run dev
+Runs locally at → http://localhost:5000
+Swagger Docs → http://localhost:5000/api-docs
+
+
+
+
+✅ Features Implemented
+Frontend
+✔️ Landing page with title “Experience Print Come to Life”
+✔️ QR Code generation & scan simulation
+✔️ WebGL-based AR content (3D cube animation)
+✔️ Buy Now button
+✔️ Responsive UI (Tailwind)
+✔️ Analytics component showing scans & avg. time spent
+
+Backend
+✔️ POST /api/scans → record scan with time spent, user-agent & location
+✔️ GET /api/stats/total-scans → fetch total scans
+✔️ GET /api/stats/unique-users → fetch unique users by IP
+✔️ GET /api/stats/campaign → fetch campaign performance summary
+
+
+)
+
+📹 Demo Links
+Frontend (Netlify): https://ar-triggered-atul.netlify.app/
+Backend (Render): [Your Render Link]
+
+
+🚀 Candidate Information
+👤 Atul Verma
+📧 atulv7408@gmail.com
+📞 7408645168
+
